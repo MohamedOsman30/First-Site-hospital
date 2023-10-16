@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.486);
+  overflow: auto;
+  z-index: 111;
+  position: fixed;
+}
+.logo{
+    font-size: 40px;
+    margin-left: 100px;
+    color:#D3D3D3;
+    display: inline-block;
+}
+.p-logo{
+    font-size: 35px;
+    color:#D3D3D3;
+    float: left;
+}
+.nav{
+    list-style: none; 
+    float: right;
+    margin-right: 150px;
+}
+.nav li{
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 22px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.nav li a{
+    text-decoration: none;
+    color:#D3D3D3
+}
+.div1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/istockphoto-855680246-1024x1024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.overley{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.397);
+}
+.contant{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 50%;
+    text-align: center;
+}
+.title1{
+    font-size: 50px;
+    color: aliceblue;
+}
+.p-title1{
+    font-size: 25px;
+    color: rgba(240, 248, 255, 0.685);
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+.btn{
+padding: 15px;
+    font-size: 17px;
+    border: 1px solid rgba(240, 248, 255, 0.685);
+    border-radius: 22px;
+    margin-left: 30px;
+    background-color:rgb(39, 108, 168);
+    cursor: pointer;
+    color: azure;
+    text-transform: capitalize;
+}
+.btn1{
+    background-color:azure;
+    color: dimgrey;
+}
+.btn:hover{
+opacity: 0.7;
+}
+.div2 ,.div3,.div4,.div8{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    background-color:azure;
+}
+.titel2 ,.titel3{
+   font-size: 50px;
+  padding-top: 25px;
+}
+.line{  
+    width: 100px;
+    height: 2px;
+    background-color: 	#696969 ;
+    margin: auto;
+   }
+   .contaner{
+    width: 1000px;
+    height: 500px;
+    border:2px solid rgba(121, 77, 46, 0.493) ;
+    margin: auto;
+    overflow: auto;
+   }
+   .card{
+    border: 2px solid #A9A9A9 ;
+    height: 300px;
+    width: 200px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    position: relative;
+}
+.icon{
+    margin-top: 20px;
+    font-size: 50px;
+    z-index: 0;
+}
+.p-icon{
+    margin-top: 35px;
+    font-size: 23px;
+   
+}
+.card::after {
+    position: absolute;
+    content: "";
+
+    width: 0 ;
+    height: 0 ;
+
+   top: 0;
+    left: 0;
+
+    background-color: rgba(100, 136, 137, 0.478)  ;
+    opacity: 0 ;
+    transition: 1s;
+}
+.card:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5 ;
+    z-index: 0;
+}
+.card:hover .p-icon{
+    color: #000000;
+    transition: color 1s;
+    z-index: 10;
+}
+.box1 ,.box2{
+    width: 1000px;
+    height: 50%;
+    margin: auto;
+    overflow: auto;
+}
+.card2{
+    border: 2px solid #A9A9A9 ;
+    height: 250px;
+    width: 200px;
+    float: left;
+    margin-left: 10%;
+    position: relative;
+}
+.over-laye{
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    background-color:rgb(192,192,192);
+    opacity: 0.5;
+   visibility: hidden;
+}
+.card2:hover .over-laye{
+    opacity:0.89;
+    visibility: visible;
+    transition: 0.5s;
+}
+.over-laye-title{
+    padding-top: 40%;
+    font-size: 20px;
+}
+.Book-now{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid rgba(240, 248, 255, 0.685);
+    border-radius: 22px;
+    background-color: aliceblue;
+}
+.contaner2{
+    width: 1300px;
+    height: 400px;
+    margin: auto;
+    overflow: auto;
+    margin-top: 6%;
+}
+.card3{
+    width: 30%;
+    float: left;
+    margin-bottom: 20px;
+    border: 1px solid #a8a8a8;
+ 
+    position: relative;
+    margin-left: 35px;
+}
+.con-icon{
+    height: 44%;
+    width: 20%;
+    border: #000000 solid 1px;
+    display: inline;
+}
+.icon-g{
+    position: absolute;
+    left: 10px;
+    display: block;
+}
+.card3{
+    width:30%;
+    float: left;
+    margin-bottom: 20px;
+    border: 1px solid #a8a8a8 ;
+    padding: 30px 15px 30px 70px;
+    position: relative;
+    margin-left: 35px;
+    z-index: 1;
+}
+
+.card3 .icon{
+    position: absolute;
+    left:15px;
+    top:26px;
+    color:#6195ff;
+}
+.card3-title {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    transition: 1s;
+}
+.card3-desc {
+ text-transform: capitalize;
+ margin-bottom: 15px;
+ line-height: 1.6;
+ color: #000000;
+ }
+ 
+ .card3::after {
+    position: absolute;
+    content: "";
+
+    width: 0 ;
+    height: 0 ;
+
+   top: 0;
+    left: 0;
+
+    background-color: rgba(100, 136, 137, 0.478)  ;
+    opacity: 0 ;
+    transition: 1s;
+}
+.card3:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5 ;
+    z-index: 0;
+    
+}
+.card3:hover .card3-title{
+    color: #6195ff;
+    font-weight: bold;
+}
+.div5{
+    width: 100%;
+    height: 100vh;
+    background-color:azure;
+}
+.dicreption,.photo{
+    height: 80%;
+    width: 50%;
+    
+    float: left;
+    position: relative;
+}
+.dots-list{
+  
+   text-align: center;
+}
+.dots li{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #a8a8a8;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+.dots .f-dots{
+    background-color: #6195ff;
+}
+.dots li:hover{
+    background-color: #6195ff;
+}
+.feedbacks{
+    font-size: 50px;
+}
+.dis-contant{
+    margin-left: 45px;
+    margin-top: 20px;
+}
+.i-correcrt{
+font-size: 25px;
+}
+.dis-p{
+    display: inline;
+    font-size: 25px;
+}
+.i-correct,.dis-p{
+    margin-left: 10px;
+}
+.div6{
+    position: relative;
+    background-image: url(../image/doctor-6701410_1280.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contanerr{
+    width: 80%;
+    margin: auto;
+}
+.icoon{
+    overflow: hidden;
+    padding-top: 70px;
+}
+.iconss{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.iconss-title{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+.icoon{
+    color: #6195ff;
+    margin-bottom: 15px;
+    
+}
+
+.card4{
+    background-color: #dadada70;
+    border: 2px solid  rgb(187, 194, 204);
+    height: 300px;
+    width: 200px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    transition: 1s;
+    position: relative;
+}
+.price{
+    border: 2px solid  rgb(187, 194, 204);
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+   margin: auto;
+}
+.number{
+    font-size: 25px;
+    }
+    .contaneer{
+        width: 1000px;
+        height: 500px;
+        border:2px solid  rgb(187, 194, 204) ;
+        margin: auto;
+        overflow: auto;
+       
+    }
+    .card4:hover{
+        width: 350px;
+        height: 300px;
+        margin-left: 2%;
+        border-radius: 5%;
+        border-color:  rgb(187, 194, 204);
+    }
+    .tiitel1{
+        margin-top: 50px;
+    }
+
+    .card4::after {
+        position: absolute;
+        content: "";
+    
+        width: 100% ;
+        height: 0 ;
+    
+       top: 0;
+        left: 0;
+    
+        background-color: rgba(100, 136, 137, 0.478) ;
+        opacity: 0 ;
+        transition: 1s;
+    }
+    .card4:hover::after{
+        width: 100%;
+        height: 100%;
+        opacity: 0.5 ;
+        z-index: 0;
+    }
+.card4:hover .tiitel{
+    color: #72639d;
+}
+.card4:hover .number{
+    color: #72639d;
+    font-size: 28px;
+}
+.div7{
+    position: relative;
+    background-image: url(../image/wp2655088-medical-doctor-wallpaper.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+}
+.part1{
+    position: absolute;
+    background-color: rgba(187, 194, 204, 0.548);
+    width: 400px;
+    height: 250px;
+    top:30%;
+    border-radius: 10px;
+    left:55%;
+   
+}
+
+.part2{
+    width: 400px;
+    height: 250px;
+    background-color: rgba(187, 194, 204, 0.548);
+    position: absolute;
+    top:30%;
+    left:20%;
+    border-radius: 10px;
+}
+.The-first-branch-of-the-hospital{
+    border-radius: 50%;
+}
+.prag{
+    position: absolute;
+    top: 10%;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 800;
+}
+.dis-part{
+    margin-top: 20px;
+    font-size: 25px;
+    color: #ffffff95;
+    font-weight: 500;
+}
+.div8{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    background-color:azure;
+}
+.contaner8{
+    width: 50%;
+    height: 400px;
+    background-color: #6195ff;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+}
+.team-item {
+    float: left;
+    background-color: rgba(187, 187, 187, 0.34);
+    width: 30%;
+    padding: 14px  18px;
+    text-align: center;
+    position: relative;
+    transition: 1s;
+    border-radius: 10px;
+}
+.ww {
+    margin: 0px  5%;
+}
+.team-img {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-img  img {
+    width: 100%;
+}
+
+.team-overley {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.team-overley a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(53, 171, 240);
+    color: #fff;
+    font-size: 23px ;
+    margin-left: auto ;
+   
+}
+.team-overley  a  i {
+    line-height: 40px ;
+}
+
+.team-info-title {
+    text-transform: uppercase;
+    padding: 12px  0px;
+    color: rgb(58, 58, 58);
+}
+.team-info-sp1 {
+    text-transform: capitalize;
+    color: grey;
+}
+.team-item:hover  .team-info-title {
+    color: #fff;
+}
+.team-item:hover  .team-info-sp1 {
+    color: blue;
+}
+
+
+.team-item::after {
+    position: absolute;
+    content: "";
+
+    width: 0 ;
+    height: 0 ;
+
+   top: 0;
+    left: 0;
+
+    background-color: rgba(100, 136, 137, 0.478)  ;
+    opacity: 0 ;
+    transition: 1s;
+}
+.team-item:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5 ;
+    z-index: 0;
+    border-top-left-radius:60px;
+    border-bottom-right-radius:60px;
+}
+.footer{
+    background-color: #4c4d52;
+    text-align: center;
+    height: 200px;
+    
+}
+.footer-links li {
+    display: inline-block;
+    background-color: #2263e3;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+    padding-top: 15px;
+}
+.footer-links {
+    list-style: none;
+    margin: 20px 0;
+}
+.photoo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.footer-links li:hover{
+    background-color: #4ec1da;
+}
